@@ -1,0 +1,103 @@
+/* Extra small devices (768px and down) */
+@media screen and (max-width: 768px) {
+    /* for mobile web */
+    .Navbar {
+        background-color: #858585;
+        padding: 0 1rem 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .Navbar h2 {
+        background-color: #E05454;
+        color: white;
+        text-align: center;
+        border-radius: 50%;
+        height: fit-content;
+        width: 100px;
+        margin : 1rem;
+    }
+
+    .Navbar .mobile-header {
+        display: block;
+        color: white;
+    }
+
+    .Navbar .desktop-header {
+        display: none;
+    }
+    
+    .Navbar .menu-container a {
+        text-decoration: none;
+        /* color: black; */
+        color: white;
+        font-weight: bold;
+        padding: 0 0.5rem 0 0.5rem;
+        display: none;
+    }
+
+    .Navbar .menu-container a:hover{
+        background-color: black;
+        border-radius: 10px;
+    }
+    
+    #home,#profile {
+        /* border-right: 2px black solid; */
+    }
+    
+    #logout {
+        /* border-left: 2px black solid; */
+    }
+  }
+/* Extra larger devices (768px and up) */
+@media screen and (min-width: 768px) {
+    /* for desktop web */
+    .Navbar {
+        background-color: rgba(235, 235, 235, 0.82);;
+        padding: 0 1rem 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 12;
+    }
+    
+    .Navbar h2 {
+        background-color: #E05454;
+        color: white;
+        text-align: center;
+        width: auto;
+        min-width: 15rem;
+        margin: 1rem 0 1rem 0;
+    }
+
+    .Navbar .mobile-header {
+        display: none;
+    }
+
+    .Navbar .desktop-header {
+        display: block;
+    }
+    
+    /* Both <Link> and <a> components are using a's component for styling. */
+    .Navbar .menu-container a {
+        text-decoration: none;
+        font-size: 1rem;
+        color: black;
+        font-weight: bold;
+        padding: 0 0.5rem 0 0.5rem;
+    }
+
+    .Navbar .menu-container .home-nav,
+    .Navbar .menu-container .profile-nav {
+        border-right: 2px black solid;
+    }
+
+    .Navbar .menu-container .logout-nav {
+        border-left: 2px black solid;
+    }
+}

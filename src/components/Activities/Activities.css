@@ -1,0 +1,231 @@
+@media screen and (max-width: 768px) {
+    /* for mobile web */
+
+    .Activities {
+        border-radius: 10px;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-width: 300px;
+    }
+    
+    .Activities .date-container {
+        border-radius: 10px;
+        box-shadow: 2.5px 5px 10px darkgrey;
+        width: auto;
+
+        margin-bottom: 2rem;
+    }
+
+    .Activities .summary-container {
+        border: 1px darkgray solid;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2.5px 5px 10px darkgrey;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 40px;
+
+        margin: 0.5rem;
+    }
+
+    .Activities .summary-container img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .Activities .summary-container .activities-result-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Activities .summary-container .activities-result-box  h1 {
+        margin: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .Activities .summary-container .activities-result-box  span {
+        display: none;
+    }
+
+    .Activities .filter-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .Activities .filter-container button {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        background-color: white;
+        color: #4972DB;
+        border: 1px solid #4972DB;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .Activities .filter-container button:focus {
+        background-color: #4972DB;
+        color: white;
+        font-weight: bold;
+    }
+
+    .Activities .add-button {
+        border: 1px solid gray;
+        border-radius: 10px;
+        background-color: white;
+        margin: 0.5rem ;
+        padding: 0.5rem;
+
+        /* display: none; */
+    }
+
+    .Activities .add-button:hover{
+        background-color: rgb(120, 120, 131);
+        opacity: 0.5;
+    }
+
+    .Activities .add-button img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .Activities .activities-board {
+        padding: 1rem;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+  }
+/* Extra larger devices (768px and up) */
+@media screen and (min-width: 768px) {
+
+    .Activities {
+        border-radius: 10px;
+        background-color: rgba(235, 235, 235, 0.82);;
+        width: 100%;
+    }
+
+    .Activities .date-container {
+        border-radius: 10px;
+        box-shadow: 2.5px 5px 10px darkgrey;
+
+        position: absolute;
+        z-index: 11;
+        top: -15px;
+        left: 40px;
+    }
+
+    .Activities .summary-container {
+        border: 1px darkgray solid;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 2.5px 5px 10px darkgrey;
+        min-width: 500px;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        right: 80px;
+        top: -25px;
+
+        padding: 0.25rem;
+    }
+    
+    .Activities .summary-container img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .Activities .summary-container .activities-result-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Activities .summary-container .activities-result-box  h1 {
+
+    }
+
+    .Activities .summary-container .activities-result-box  span {
+        
+    }
+
+    .Activities .filter-container {
+        position: relative;
+        top: 30px;
+        left: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 50px;
+        width: 300px;
+    }
+
+    .Activities .filter-container button {
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        background-color: white;
+    }
+
+    .Activities .filter-container button:focus {
+        background-color: rgb(2, 2, 253);
+        opacity: 0.5;
+        color: white;
+        font-weight: bold;
+    }
+
+    /* .Activities .add-button {
+        position: absolute;
+        border: 1px solid gray;
+        border-radius: 10px;
+        top: 10px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+        background-color: white;
+    }
+
+    .Activities .add-button:hover{
+        background-color: rgb(120, 120, 131);
+        opacity: 0.5;
+    }
+
+    .Activities .add-button img {
+        height: 30px;
+        width: 30px;
+    } */
+
+    .Activities .activities-board {
+        margin: 2rem;
+        padding: 0.5rem;
+
+        height: 500px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        overflow-y: scroll;
+    }
+
+    .Activities .activities-board::-webkit-scrollbar {
+        width: 5px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .Activities .summary-container{
+        display: none;
+    }
+}
